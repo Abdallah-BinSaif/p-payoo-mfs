@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payooo Home Page</title>
-</head>
-<body>
-    <h1>I am from Login page</h1>
-</body>
+<html lang="en" class="bg-black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo MFS Login Page</title>
+  </head>
+  <body>
+    <div class="flex justify-center">
+        <div class="artboard artboard-demo phone-5 p-4">
+          <main>
+            <section class="flex justify-between items-center">
+                <div><p class="font-extrabold">$ <span id="current-balance">500</span></p><p>Available Balance</p></div>
+                <div><button id="btn-logout" class="btn border-b-red-500 border-b-4 shadow-xl text-red-500">Log Out</button></div>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <h2 class="font-extrabold text-2xl">Welcome to Payooo!</h2>
+                <p>Enjoy easy and convenient finacnial services with us.Cashout charge is low and resonable</p>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <button class="btn w-28 h-24 shadow-2xl">Add Money</button>
+                <button class="btn w-28 h-24 shadow-2xl">Cash Out</button>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <!-- Add Money Section -->
+                <div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="add-money-amount" type="text" placeholder="Cash In Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN Number</span>
+                            </label>
+                            <input id="add-money-pin-num" type="password" placeholder="Your PIN" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </section>
+          </main>
+        </div>
+      </div>
+
+      <script src="./home.js"></script>
+      <script src="./add-money.js"></script>
+  </body>
 </html>
