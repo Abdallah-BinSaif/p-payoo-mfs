@@ -27,13 +27,13 @@
             </section>
             <div class="divider"></div>
             <section>
-                <button class="btn w-28 h-24 shadow-2xl">Add Money</button>
-                <button class="btn w-28 h-24 shadow-2xl">Cash Out</button>
+                <button id="btn-add-money-section" class="btn w-28 h-24 shadow-2xl">Add Money</button>
+                <button id="btn-cash-out-money-section" class="btn w-28 h-24 shadow-2xl">Cash Out</button>
             </section>
             <div class="divider"></div>
             <section>
                 <!-- Add Money Section -->
-                <div>
+                <div id="add-money-section">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
@@ -55,8 +55,8 @@
                       </div>
                 </div>
                 <!-- Cash Out Section -->
-                <div>
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="cash-out-section">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -82,7 +82,6 @@
       </div>
 
       <script src="./home.js"></script>
-      <!-- <script src="./add-money.js"></script> -->
-      <script src="./cash-out.js"></script>
+      <script src="./toggole.js"></script>
   </body>
 </html>
