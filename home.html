@@ -54,12 +54,35 @@
                         </form>
                       </div>
                 </div>
+                <!-- Cash Out Section -->
+                <div>
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="cash-out-money-amount" type="text" placeholder="Cash Out Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN Number</span>
+                            </label>
+                            <input id="cash-out-money-pin-num" type="password" placeholder="Your PIN" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-cash-out-money" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
             </section>
           </main>
         </div>
       </div>
 
       <script src="./home.js"></script>
-      <script src="./add-money.js"></script>
+      <!-- <script src="./add-money.js"></script> -->
+      <script src="./cash-out.js"></script>
   </body>
 </html>
